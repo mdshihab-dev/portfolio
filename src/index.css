@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html{
+    scroll-behavior: smooth;
+    
+}
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: rgba(3, 0, 20, 0.4);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(99, 102, 241, 0.1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+	background: #0c192c;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 
+	  inset 0 0 20px rgba(168, 85, 247, 0.2),
+	  0 0 10px rgba(99, 102, 241, 0.2);
+  }
+
+
+@utility container{
+    margin: auto;
+    max-width: 1280px;
+}
+
+@theme {
+    --font-inter: 'Inter', sans-serif;
+    --color-dark-main: #0c192c;
+    --color-dark-sub-main: #111827;
+    --color-light-main: #fff;
+    --color-light-sub-main: #F9FAFB;
+    --color-heading: #111827;
+    --color-paragraph: #4B5563;
+    --color-grid-light: rgba(0,0,0,0.1);
+    --color-grid-dark: rgba(88,88,88,0.1);
+
+}
+
