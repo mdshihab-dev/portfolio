@@ -47,3 +47,18 @@ html{
 
 }
 
+.animation{
+  background: #10B981;
+  animation: animate 2s ease infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+

@@ -3,7 +3,7 @@ import image from '../../assets/images/shihab.jpg'
 const About = () => {
   return (
     <div id="about" className=" bg-light-sub-main dark:bg-dark-sub-main">
-      <div className=" container px-2 box-border lg:px-0 py-16 lg:py-24">
+      <div className=" container px-2 box-border lg:px-0 py-[50px] lg:py-24">
         <Heading title={'About me'}/>
 
         <div className=" mt-6 lg:mt-12 lg:flex items-center lg:gap-x-12">
@@ -14,7 +14,7 @@ const About = () => {
           </div>
 
 
-          <div className=" w-screen lg:w-[50%] lg:flex justify-center">
+          <div className=" lg:w-[50%] lg:flex justify-center">
             <div>
               <h2 className=" text-center lg:text-start px-12 lg:px-0 font-inter font-semibold text-2xl lg:text-[30px] leading-8 lg:leading-9 text-heading -tracking-[2%] dark:text-white">
               Curious about me? Here you have it:

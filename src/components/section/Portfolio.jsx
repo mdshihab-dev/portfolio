@@ -33,14 +33,14 @@ const Portfolio = () => {
   ]
   return (
     <div id="portfolio" className=" bg-light-sub-main dark:bg-dark-sub-main">
-      <div className=' container py-16 lg:py-24'>
+      <div className=' container px-2 lg:px-0 py-[50px] lg:py-24'>
         <Heading title={title} />
         <div className=' flex justify-center'>
           <p className=' px-[52px] lg:px-0 mt-6 text-center font-normal font-inter text-lg leading-7 text-paragraph dark:text-white max-w-xl'>
            Some of the noteworthy projects I have built:
         </p>
         </div>
-        <div className=" mt-6 lg:mt-12 lg:flex lg:px-20 lg:flex-wrap lg:justify-between">
+        <div className=" mt-6 lg:mt-12 gap-y-4 flex flex-col lg:flex-row lg:px-20 lg:flex-wrap lg:justify-between">
             {
               projectPrototypeData.map((data,index)=>{
                 return <ProjectPrototype key={index} imageUrl={data.imageUrl} title={data.title} desc={data.desc}/>

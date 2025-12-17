@@ -24,14 +24,14 @@ const Testimonials = () => {
     },
   ]
   return (
-      <div id='testimonials' className=' container px-2 lg:px-0 py-16 lg:py-24'>
+      <div id='testimonials' className=' container px-2 lg:px-0 py-[50px] lg:py-24'>
           <Heading title={title}/>
           <div className=' flex justify-center'>
             <p className=' text-wrap px-7 lg:px-0 mt-6 text-center font-normal font-inter text-lg leading-7 text-paragraph dark:text-white max-w-xl'>
             The skills, tools and technologies I am really good at: 
             </p>
           </div>
-          <div className=' mt-6 lg:mt-12 flex flex-col lg:flex-row justify-between gap-y-2.5 lg:gap-y-0 lg:gap-x-12 items-center'>
+          <div className=' mt-6 lg:mt-12 flex flex-col lg:flex-row justify-between lg:gap-x-12 items-center'>
             {
               client_info.map((client,index)=>{
                 return <Card keu={index} imageUrl={client.imageUrl} name={client.name} companyName={client.companyName} message={client.message}/>

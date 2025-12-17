@@ -6,7 +6,7 @@ import HomeIntroduction from '../HomeIntroduction'
 
 const Home = () => {
   return (
-      <div id='home' className=' container px-2 lg:px-0 py-16 lg:py-24 z-50 lg:flex lg:justify-between lg:items-center'>
+      <div id='home' className=' container px-2 lg:px-0 py-[50px] lg:py-24 z-50 lg:flex lg:justify-between lg:items-center'>
           
           <div className='hidden lg:flex'>
             <HomeIntroduction/>
@@ -24,5 +24,4 @@ const Home = () => {
       </div>
   )
 }
-// [#360961]
 export default Home
