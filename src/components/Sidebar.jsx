@@ -22,22 +22,22 @@ const Sidebar = () => {
 
         <div className='my-5'>
            <ul className=' flex flex-col gap-4 [&>li]:text-xl [&>li]:font-inter [&>li]:font-medium dark:[&>li]:font-medium [&>li]:leading-6  [&>li]:text-paragraph dark:[&>li]:text-white [&>li]:cursor-pointer [&>li]:px-4 [&>li]:py-1.5'>
-                <li>
+                <li onClick={()=> dispatch(toggleSidebar(false))}>
                     <a href="#home">Home</a>
                 </li>
-                <li>
+                <li onClick={()=> dispatch(toggleSidebar(false))}>
                     <a href="#about">About</a>
                 </li>
-                <li>
+                <li onClick={()=> dispatch(toggleSidebar(false))}>
                     <a href="#skills">Skills</a>
                 </li>
-                <li>
+                <li onClick={()=> dispatch(toggleSidebar(false))}>
                     <a href="#portfolio">Portfolio</a>
                 </li>
-                <li>
+                <li onClick={()=> dispatch(toggleSidebar(false))}>
                     <a href="#testimonials">Testimonials</a>
                 </li>
-                <li>
+                <li onClick={()=> dispatch(toggleSidebar(false))}>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
