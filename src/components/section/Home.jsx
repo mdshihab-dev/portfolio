@@ -1,9 +1,5 @@
-
 import image from '../../assets/images/shihab.jpg'
 import HomeIntroduction from '../HomeIntroduction'
-
-  
-
 const Home = () => {
   return (
       <div id='home' className=' container px-2 lg:px-0 py-[50px] lg:py-24 z-50 lg:flex lg:justify-between lg:items-center'>

@@ -1,4 +1,3 @@
-import React from "react";
 
 const LocationIcon = () => {
   let styles=" stroke-paragraph dark:stroke-white dark:group-hover:stroke-violet-700 transition-all"

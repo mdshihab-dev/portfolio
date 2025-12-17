@@ -1,19 +1,17 @@
-import { useState } from 'react'
 import ToggleDarkMode from '../ToggleDarkMode'
 import LogoLight from '../../assets/logos/logolight.svg'
 import LogoDark from '../../assets/logos/logodark.svg'
 import { Link } from 'react-router-dom'
-import { IoMenu } from 'react-icons/io5'
-import { useDispatch, useSelector } from 'react-redux'
-import { toggleSidebar } from '../../feature/appSlice'
+import { useSelector } from 'react-redux'
+import Sidebar from '../Sidebar'
+import MenuIcon from '../../assets/icons/MenuIcon'
 const Header = () => {
 
     let theme = useSelector((state)=> state.app.theme)
-    let dispatch = useDispatch()
     
   return (
     <div className=' px-2 lg:px-0 bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(255,255,255,0.1)] backdrop-blur-lg sticky top-0 z-50'>
-        <div className=' container py-4 flex items-center justify-between text-2xl '>
+        <div className=' relative container py-4 flex items-center justify-between text-2xl '>
           <div>
             <Link to={'/'}>
               <img src={theme === 'light' ? LogoLight : LogoDark} alt="Logo"/>
@@ -48,8 +46,9 @@ const Header = () => {
           </div>
 
           <div className=' flex lg:hidden'>
-            <IoMenu onClick={()=> dispatch(toggleSidebar(true))} className=' text-dark-main dark:text-white text-3xl'/>
+            <MenuIcon/>
           </div>
+        <Sidebar/>
         </div>
     </div>
   )

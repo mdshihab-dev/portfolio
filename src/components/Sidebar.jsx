@@ -1,27 +1,13 @@
-import React from 'react'
-import logoLight from '../assets/logos/logolight.svg'
-import logoDark from '../assets/logos/logodark.svg'
-import { MdOutlineClose } from 'react-icons/md'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleSidebar } from '../feature/appSlice'
 import ToggleDarkMode from './ToggleDarkMode'
-import { Link } from 'react-router-dom'
 const Sidebar = () => {
     let showSidebar = useSelector((state)=> state.app.showSidebar)
-    let theme = useSelector((state)=> state.app.theme)
     let dispatch = useDispatch()
   return (
-    <div  className={` lg:hidden absolute transition-all duration-500 h-screen ${showSidebar ? '[clip-path:circle(72.0%_at_50%_48%)]' : '[clip-path:circle(0.0%_at_50%_0)]'} z-100 bg-white dark:bg-dark-sub-main w-screen`}>
-        <div className=' px-2 py-4 flex justify-between items-center'>
-            <Link to='/'>
-              <img src={theme === 'light' ?  logoLight : logoDark} alt="logo"  />
-            </Link>
-            <MdOutlineClose onClick={()=> dispatch(toggleSidebar(false))} className=' text-3xl dark:text-white text-dark-main'/>
-        </div>
-        <hr className=' border-[rgba(0,0,0,0.2)] dark:border-[rgba(255,255,255,0.2)]'/>
-
-        <div className='my-5'>
-           <ul className=' flex flex-col gap-4 [&>li]:text-xl [&>li]:font-inter [&>li]:font-medium dark:[&>li]:font-medium [&>li]:leading-6  [&>li]:text-paragraph dark:[&>li]:text-white [&>li]:cursor-pointer [&>li]:px-4 [&>li]:py-1.5'>
+    <div  className={` lg:hidden py-8 w-full absolute top-[65px] transition-all duration-500 shadow-md z-100  rounded-xl bg-[#ddd] dark:bg-dark-main dark:border-2 dark:border-[rgba(255,255,255,0.1)] ${showSidebar ? '[clip-path:circle(72.0%_at_50%_48%)]' : '[clip-path:circle(0.0%_at_50%_0)]'}`}>
+        <div>
+           <ul className=' px-3 flex flex-col gap-3 [&>li]:text-lg [&>li]:font-inter [&>li]:font-medium dark:[&>li]:font-medium [&>li]:leading-6  [&>li]:text-paragraph dark:[&>li]:text-white [&>li]:cursor-pointer [&>li]:px-4 [&>li]:py-1.5'>
                 <li onClick={()=> dispatch(toggleSidebar(false))}>
                     <a href="#home">Home</a>
                 </li>
@@ -43,9 +29,9 @@ const Sidebar = () => {
             </ul>
         </div>
 
-        <hr className=' border-[rgba(0,0,0,0.2)] dark:border-[rgba(255,255,255,0.2)]'/>
-        <div className=' my-5 flex items-center justify-between px-4'>
-          <p className='text-xl font-inter font-medium dark:font-medium leading-6  text-paragraph dark:text-white cursor-pointer'>Switch Theme</p>
+        <hr className=' my-3 border-[rgba(0,0,0,0.1)] dark:border-[rgba(255,255,255,0.1)]'/>
+        <div className=' my-5 flex items-center justify-between px-3'>
+          <p className=' px-3 text-lg font-inter font-medium dark:font-medium leading-6  text-paragraph dark:text-white cursor-pointer'>Switch Theme</p>
           <ToggleDarkMode/>
         </div>
         <div className=' mt-6 text-center px-4'>

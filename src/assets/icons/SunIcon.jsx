@@ -1,6 +1,6 @@
 
 const SunIcon = () => {
-  let styles=" stroke-white dark:group-hover:stroke-violet-700 transition-all"
+  let styles=" stroke-white lg:dark:group-hover:stroke-violet-700 transition-all"
   return (
     <>
       <svg

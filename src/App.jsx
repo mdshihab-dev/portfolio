@@ -12,7 +12,6 @@ function App() {
   return (
 
       <div className=" bg-light-main dark:bg-dark-main bg-[linear-gradient(to_right,var(--color-grid-light)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-grid-light)_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,var(--color-grid-dark)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-grid-dark)_1px,transparent_1px)] bg-size-[25px_25px] ">
-        <Sidebar/>
         <Header/>
         <Home/>
         <About/>

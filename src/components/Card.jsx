@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Card = ({imageUrl,message,name,companyName}) => {
   return (
