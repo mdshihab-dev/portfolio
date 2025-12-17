@@ -11,7 +11,7 @@ const Sidebar = () => {
     let theme = useSelector((state)=> state.app.theme)
     let dispatch = useDispatch()
   return (
-    <div  className={` lg:hidden absolute transition-all h-screen top-0 ${showSidebar ? 'left-0' : '-left-full'} z-100 bg-white dark:bg-dark-sub-main w-screen`}>
+    <div  className={` lg:hidden absolute transition-all duration-500 h-screen ${showSidebar ? '[clip-path:circle(72.0%_at_50%_48%)]' : '[clip-path:circle(0.0%_at_50%_0)]'} z-100 bg-white dark:bg-dark-sub-main w-screen`}>
         <div className=' px-2 py-4 flex justify-between items-center'>
             <Link to='/'>
               <img src={theme === 'light' ?  logoLight : logoDark} alt="logo"  />
