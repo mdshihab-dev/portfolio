@@ -11,8 +11,8 @@ const HomeIntroduction = () => {
   return (
     <div>
             <h1 className=' font-inter text-heading dark:text-white font-bold leading-10 lg:leading-[72px] text-4xl lg:text-6xl -tracking-[2%] text-center lg:text-start'>Hi, I’m Shihab</h1>
-            <p className=' text-center lg:text-start mt-2 font-inter font-normal text-base leading-6 text-paragraph max-w-3xl dark:text-white'>
-              I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.
+            <p className=' text-center  lg:pr-20 lg:text-start mt-2 font-inter font-normal text-base leading-6 text-paragraph max-w-3xl dark:text-white'>
+              I’m a MERN stack developer with a focus on creating fast, responsive, and user-friendly web applications with clean code and pixel-perfect design. I’ve been working with web technologies for over a year, and I still love it as if it were something new.
             </p>
 
             <div className=' flex justify-center lg:inline-block '>
@@ -24,7 +24,7 @@ const HomeIntroduction = () => {
 
             <p className=' justify-center lg:justify-start mt-2 flex items-center gap-2 font-inter font-normal text-base leading-6 text-paragraph dark:text-white'>
                 <div className=' h-6 w-6 relative flex items-center justify-center'>
-                    <div className=' h-2.5 w-2.5 absolute rounded-full bg-[#10B981]'></div>
+                    <div className=' h-2.5 w-2.5 absolute rounded-full bg-[#3aca0e]'></div>
                     <div className='animation absolute h-2.5 w-2.5 rounded-full '></div>
                 </div>
                 Available for new projects

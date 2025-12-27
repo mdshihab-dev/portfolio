@@ -21,10 +21,7 @@ const About = () => {
             </h2>
             <div className=" px-2 lg:px-0">
               <p className=" mt-6  lg:max-w-[584px] font-inter font-normal text-base leading-6 text-paragraph dark:text-white">
-              I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
-            </p>
-            <p className=" mt-4 lg:max-w-[584px] font-inter font-normal text-base leading-6 text-paragraph dark:text-white">
-              I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+             Hello, I’m Mohammad Shihab, a MERN stack developer with 1.5 years of hands-on experience, having started my web development journey in 2024. I build scalable, high-performance web applications with clean architecture, maintainable code, and user-friendly, pixel-perfect UI. I have worked on multiple MERN projects (React.js / Next.js / Tailwind CSS / Redux / Node.js / Express / MongoDB). I have a strong problem-solving mindset and approach challenges with logical thinking. Currently, I’m seeking real-world experience to tackle new challenges and grow as a developer.
             </p>
             </div>
             </div>
