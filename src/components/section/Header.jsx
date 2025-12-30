@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import Sidebar from '../Sidebar'
 import MenuIcon from '../../assets/icons/MenuIcon'
+import { LuFileText } from 'react-icons/lu'
 const Header = () => {
 
     let theme = useSelector((state)=> state.app.theme)
@@ -42,7 +43,10 @@ const Header = () => {
             
             <span className=' mx-6 h-6 w-px bg-paragraph dark:bg-white'></span>
             <ToggleDarkMode/>
-            <button className=' ml-4 cursor-pointer font-inter font-medium text-base leading-6 text-white bg-dark-main px-4 py-1.5 rounded-lg dark:text-paragraph dark:bg-white'>Download CV</button>
+            <button className=' flex items-center justify-center gap-x-1.5 ml-4 cursor-pointer font-inter font-medium text-base leading-6 text-white bg-dark-main px-4 py-1.5 rounded-lg dark:text-paragraph dark:bg-white'>
+               Resume
+              <LuFileText className='text-lg'/>
+            </button>
           </div>
 
           <div className=' flex lg:hidden'>
