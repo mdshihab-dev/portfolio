@@ -13,17 +13,20 @@ const Portfolio = () => {
     {
       imageUrl: Eshop,
       live_link: 'https://eshop-cloud.vercel.app',
+      github: 'https://github.com/mdshihab-dev/eshop',
       title: 'Eshop (E-Commerce)',
       desc: `Eshop is a multi-page e-commerce website with features like product searching, filtering, shopping cart, and order management. The technologies used in this project is React.js, React Router, Tailwind CSS, React Slick ,Redux for state management.`
     }, 
     {
       imageUrl: Scoot,
+      github: 'https://github.com/mdshihab-dev/scoot',
       live_link: 'https://scoot-six-smoky.vercel.app',
       title: 'Scoot',
       desc: `A multi-page responsive website focused on pixel-perfect UI/UX and smooth navigation, The technologies used in this project is Next JS , Tailwind CSS , Context API for state management.`
     },
     {
       imageUrl: Todo,
+      github: 'https://github.com/mdshihab-dev/fullstack-todo',
       live_link: 'https://todo-application-smoky.vercel.app',
       title: 'Full-Stack Todo App',
       desc: `A Full-Stack todo application with user authentication and CRUD operations. The technologies used in this project is MERN stack with JWT authentication. Additionally used Redux for state management.`
@@ -47,7 +50,7 @@ const Portfolio = () => {
         <div className=" mt-6 lg:mt-12 gap-y-4 flex flex-col lg:flex-row lg:px-20 lg:flex-wrap lg:justify-between">
             {
               projectPrototypeData.map((data,index)=>{
-                return <ProjectPrototype key={index} live_link={data.live_link} imageUrl={data.imageUrl} title={data.title} desc={data.desc}/>
+                return <ProjectPrototype key={index} github={data.github} live_link={data.live_link} imageUrl={data.imageUrl} title={data.title} desc={data.desc}/>
               })  
             }
             
