@@ -9,7 +9,7 @@ import { LuFileText } from 'react-icons/lu'
 const Header = () => {
 
     let theme = useSelector((state)=> state.app.theme)
-    
+    let resume = `https://drive.google.com/file/d/1RhGFkHi6N9Ocm_ZTfKrO02F06Bt8Qsq4/view?usp=sharing`
   return (
     <div className=' px-2 lg:px-0 bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(255,255,255,0.1)] backdrop-blur-lg sticky top-0 z-50'>
         <div className=' relative container py-4 flex items-center justify-between text-2xl '>
@@ -43,10 +43,10 @@ const Header = () => {
             
             <span className=' mx-6 h-6 w-px bg-paragraph dark:bg-white'></span>
             <ToggleDarkMode/>
-            <button className=' flex items-center justify-center gap-x-1.5 ml-4 cursor-pointer font-inter font-medium text-base leading-6 text-white bg-dark-main px-4 py-1.5 rounded-lg dark:text-paragraph dark:bg-white'>
+            <a href={resume} target='_blank' className=' flex items-center justify-center gap-x-1.5 ml-4 cursor-pointer font-inter font-medium text-base leading-6 text-white bg-dark-main px-4 py-1.5 rounded-lg dark:text-paragraph dark:bg-white'>
                Resume
               <LuFileText className='text-lg'/>
-            </button>
+            </a>
           </div>
 
           <div className=' flex lg:hidden'>

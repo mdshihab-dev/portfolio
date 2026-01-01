@@ -10,7 +10,8 @@ const Contact = () => {
   let title = 'Get in touch'
   let styles = ` relative cursor-pointer w-[50px] h-[50px] bg-[rgba(0,0,0,0.1)] backdrop-blur-lg group p-0 rounded-full dark:border-2 dark:border-[rgba(238,234,234,0.2)] lg:dark:hover:border-violet-700 dark:bg-[rgba(255,255,255,0.05)] dark:backdrop-blur-sm transition-all ease-in-out flex flex-col items-center justify-center gap-3 cursor-pointer`
   let fbProfile = `https://shorturl.at/mW3ap`
-  let githubProfile= `https://github.com/Md-Shihab247`
+  let githubProfile= `https://github.com/mdshihab-dev`
+  let linkedinProfile= `https://shorturl.at/Qg1p0`
   let [isCopyOne,setCopyOne] = useState(false)
   let [isCopyTwo,setCopyTwo] = useState(false)
 
@@ -71,7 +72,7 @@ const Contact = () => {
               <Link to={githubProfile} target='_blank' className={styles}>
                 <LuGithub className='text-heading dark:text-white lg:dark:group-hover:text-violet-700 transition-all'/>
               </Link>
-              <Link to='/' target='_blank' className={styles}>
+              <Link to={linkedinProfile} target='_blank' className={styles}>
                 <FaLinkedinIn className='text-heading dark:text-white lg:dark:group-hover:text-violet-700 transition-all'/>
               </Link>
           </div>

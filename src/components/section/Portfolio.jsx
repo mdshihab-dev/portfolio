@@ -2,7 +2,7 @@ import Heading from "../Heading"
 import ProjectPrototype from "../ProjectPrototype"
 import Eshop from '../../assets/images/eshop.webp'
 import Scoot from '../../assets/images/scoot.webp'
-import thumbnailThree from '../../assets/images/thumbnail-3.jpg'
+import Todo from '../../assets/images/todo-app-thumbnail.webp'
 import thumbnailFour from '../../assets/images/thumbnail-4.jpg'
 import { IoIosArrowDown } from "react-icons/io"
 import { useState } from "react"
@@ -12,22 +12,22 @@ const Portfolio = () => {
   let projectPrototypeData = [
     {
       imageUrl: Eshop,
-      live_link: 'https://eshop-rosy-seven.vercel.app',
-      title: 'Eshop',
-      desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dignissimos, facilis odit natus voluptate debitis ipsa quae dolorem rerum officiis eum similique aperiam, suscipit facere tempora non sunt molestias sit!`
-    },
+      live_link: 'https://eshop-cloud.vercel.app',
+      title: 'Eshop (E-Commerce)',
+      desc: `Eshop is a multi-page e-commerce website with features like product searching, filtering, shopping cart, and order management. The technologies used in this project is React.js, React Router, Tailwind CSS, React Slick ,Redux for state management.`
+    }, 
     {
       imageUrl: Scoot,
       live_link: 'https://scoot-six-smoky.vercel.app',
       title: 'Scoot',
-      desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dignissimos, facilis odit natus voluptate debitis ipsa quae dolorem rerum officiis eum similique aperiam, suscipit facere tempora non sunt molestias sit!`
+      desc: `A multi-page responsive website focused on pixel-perfect UI/UX and smooth navigation, The technologies used in this project is Next JS , Tailwind CSS , Context API for state management.`
     },
     {
-      imageUrl: thumbnailThree,
-      live_link: '/',
-      title: 'Project Title',
-      desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dignissimos, facilis odit natus voluptate debitis ipsa quae dolorem rerum officiis eum similique aperiam, suscipit facere tempora non sunt molestias sit!`
-    },
+      imageUrl: Todo,
+      live_link: 'https://todo-application-smoky.vercel.app',
+      title: 'Full-Stack Todo App',
+      desc: `A Full-Stack todo application with user authentication and CRUD operations. The technologies used in this project is MERN stack with JWT authentication. Additionally used Redux for state management.`
+    }, 
     {
       imageUrl: thumbnailFour,
       live_link: '/',
