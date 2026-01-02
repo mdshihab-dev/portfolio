@@ -8,7 +8,7 @@ const Testimonials = () => {
       imageUrl: avatar,
       name: 'John Doe',
       companyName: 'Founder - xyz.com',
-      message: `“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”`,
+      message: `“Job well done! I am really impressed. He is very very good at what he does:) I would recommend shihab and will rehire in the future for Frontend development.”`,
     },
     {
       imageUrl: avatar,
@@ -20,7 +20,7 @@ const Testimonials = () => {
       imageUrl: avatar,
       name: 'John Doe',
       companyName: 'Freelancer',
-      message: `“Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.”`,
+      message: `“Shihab was extremely easy and pleasant to work with and he truly cares about the project being a success. Shihab has a high level of knowledge and was able to work on my MERN stack application without any issues.”`,
     },
   ]
   return (

@@ -22,7 +22,7 @@ const Portfolio = () => {
       github: 'https://github.com/mdshihab-dev/scoot',
       live_link: 'https://scoot-six-smoky.vercel.app',
       title: 'Scoot',
-      desc: `A multi-page responsive website focused on pixel-perfect UI/UX and smooth navigation, The technologies used in this project is Next JS , Tailwind CSS , Context API for state management.`
+      desc: `A multi-page responsive website focused on pixel-perfect UI/UX and smooth navigation, The technologies used in this project is React JS , Tailwind CSS , Context API for state management.`
     },
     {
       imageUrl: Todo,

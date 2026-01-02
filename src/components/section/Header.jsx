@@ -43,10 +43,10 @@ const Header = () => {
             
             <span className=' mx-6 h-6 w-px bg-paragraph dark:bg-white'></span>
             <ToggleDarkMode/>
-            <a href={resume} target='_blank' className=' flex items-center justify-center gap-x-1.5 ml-4 cursor-pointer font-inter font-medium text-base leading-6 text-white bg-dark-main px-4 py-1.5 rounded-lg dark:text-paragraph dark:bg-white'>
+            <button className=' flex items-center justify-center gap-x-1.5 ml-4 cursor-pointer font-inter font-medium text-base leading-6 text-white bg-dark-main px-4 py-1.5 rounded-lg dark:text-paragraph dark:bg-white'>
                Resume
               <LuFileText className='text-lg'/>
-            </a>
+            </button>
           </div>
 
           <div className=' flex lg:hidden'>

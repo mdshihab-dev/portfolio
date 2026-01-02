@@ -11,13 +11,13 @@ const ProjectPrototype = ({imageUrl,title,desc,github,live_link}) => {
         <div className=' mt-4 mb-2.5 lg:mb-5 flex items-center justify-between'>
             <h2 className=' font-inter text-lg font-semibold dark:text-white'>{title}</h2>
             <div className=' flex items-center justify-center gap-x-5'>
-              <Link to={github} target='_blank'>
+              <Link to={'/'}>
               <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] dark:text-violet-700'>
                     GitHub
                    <FaGithub className=' text-base'/>
               </div>
             </Link>
-              <Link to={live_link} target='_blank'>
+              <Link to={'/'}>
               <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] dark:text-violet-700'>
                     Live Demo
                    <IoMdLink className=' text-xl'/>
