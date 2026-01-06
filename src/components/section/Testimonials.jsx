@@ -6,19 +6,19 @@ const Testimonials = () => {
   let client_info = [
     {
       imageUrl: avatar,
-      name: 'John Doe',
+      name: 'Md Nesar Uddin',
       companyName: 'Founder - xyz.com',
       message: `“Job well done! I am really impressed. He is very very good at what he does:) I would recommend shihab and will rehire in the future for Frontend development.”`,
     },
     {
       imageUrl: avatar,
-      name: 'John Doe',
+      name: 'Md Fahim Sheikh',
       companyName: 'Founder - abc.com',
       message: `“Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.”`,
     },
     {
       imageUrl: avatar,
-      name: 'John Doe',
+      name: 'Sabbir Ahmed',
       companyName: 'Freelancer',
       message: `“Shihab was extremely easy and pleasant to work with and he truly cares about the project being a success. Shihab has a high level of knowledge and was able to work on my MERN stack application without any issues.”`,
     },

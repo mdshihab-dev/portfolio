@@ -20,7 +20,7 @@ const Portfolio = () => {
     {
       imageUrl: Scoot,
       github: 'https://github.com/mdshihab-dev/scoot',
-      live_link: 'https://scoot-six-smoky.vercel.app',
+      live_link: 'https://scoot-smoky.vercel.app',
       title: 'Scoot',
       desc: `A multi-page responsive website focused on pixel-perfect UI/UX and smooth navigation, The technologies used in this project is React JS , Tailwind CSS , Context API for state management.`
     },
