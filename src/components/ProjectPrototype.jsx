@@ -8,27 +8,27 @@ const ProjectPrototype = ({imageUrl,title,desc,github,live_link}) => {
             <img src={imageUrl} alt="project prototype" />
         </div>
         <div className=' mt-4 mb-2.5 lg:mb-5 flex items-center justify-between'>
-            <h2 className=' font-inter text-lg font-semibold dark:text-white'>{title}</h2>
-            <div className=' flex items-center justify-center gap-x-5'>
+            <h2 className=' font-inter text-heading text-lg font-semibold dark:text-white'>{title}</h2>
+            <div className=' flex items-center justify-center gap-x-4 lg:gap-x-5'>
               <a href={github} target='_blank'>
-              <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] dark:text-violet-700'>
+              <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] text-paragraph dark:text-violet-700'>
                     <span className=' hidden lg:flex'>
                       GitHub
                     </span>
-                   <FaGithub className=' text-base'/>
+                   <FaGithub className=' text-xl lg:text-base text-paragraph dark:text-violet-700'/>
               </div>
             </a>
               <a href={live_link} target='_blank' >
-              <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] dark:text-violet-700'>
+              <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] text-paragraph dark:text-violet-700'>
                     <span className=' hidden lg:flex'>
                       Live Demo
                     </span>
-                   <IoMdLink className=' text-xl'/>
+                   <IoMdLink className='text-[22px] lg:text-xl text-paragraph dark:text-violet-700'/>
               </div>
             </a>
             </div>
         </div>
-        <p title={desc} className=' font-inter font-medium text-sm leading-relaxed line-clamp-2 dark:text-white'>{desc}</p>
+        <p title={desc} className=' font-inter font-medium text-paragraph text-sm leading-relaxed line-clamp-2 dark:text-white'>{desc}</p>
     </div>
   )
 }
