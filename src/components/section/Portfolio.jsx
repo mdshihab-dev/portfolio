@@ -3,7 +3,7 @@ import ProjectPrototype from "../ProjectPrototype"
 import Eshop from '../../assets/images/eshop.webp'
 import Scoot from '../../assets/images/scoot.webp'
 import Todo from '../../assets/images/todo-app-thumbnail.webp'
-import thumbnailFour from '../../assets/images/thumbnail-4.jpg'
+import Ecobazar from '../../assets/images/ecobazar.webp'
 import { IoIosArrowDown } from "react-icons/io"
 import { useState } from "react"
 const Portfolio = () => {
@@ -32,10 +32,11 @@ const Portfolio = () => {
       desc: `A Full-Stack todo application with user authentication and CRUD operations. The technologies used in this project is MERN stack with JWT authentication. Additionally used Redux for state management.`
     }, 
     {
-      imageUrl: thumbnailFour,
-      live_link: '/',
-      title: 'Project Title',
-      desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dignissimos, facilis odit natus voluptate debitis ipsa quae dolorem rerum officiis eum similique aperiam, suscipit facere tempora non sunt molestias sit!`
+      imageUrl: Ecobazar,
+      github: 'https://github.com/mdshihab-dev/ecobazar',
+      live_link: 'https://ecobazar-online.vercel.app',
+      title: 'Ecobazar',
+      desc: ` Ecobazar is a multi-page e-commerce website with features like product searching, filtering, shopping cart, blogs, pagination and order management. The technologies used in this project is Next.js, TypeScript, Tailwind CSS, Swipper.js, Redux for state management.`
     }
   ]
   return (

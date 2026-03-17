@@ -1,6 +1,5 @@
 import { FaGithub } from 'react-icons/fa'
 import { IoMdLink } from 'react-icons/io'
-import { Link } from 'react-router-dom'
 
 const ProjectPrototype = ({imageUrl,title,desc,github,live_link}) => {
   return (
@@ -13,19 +12,23 @@ const ProjectPrototype = ({imageUrl,title,desc,github,live_link}) => {
             <div className=' flex items-center justify-center gap-x-5'>
               <a href={github} target='_blank'>
               <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] dark:text-violet-700'>
-                    GitHub
+                    <span className=' hidden lg:flex'>
+                      GitHub
+                    </span>
                    <FaGithub className=' text-base'/>
               </div>
             </a>
               <a href={live_link} target='_blank' >
               <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] dark:text-violet-700'>
-                    Live Demo
+                    <span className=' hidden lg:flex'>
+                      Live Demo
+                    </span>
                    <IoMdLink className=' text-xl'/>
               </div>
             </a>
             </div>
         </div>
-        <p className=' font-inter font-medium text-sm leading-relaxed line-clamp-2 dark:text-white'>{desc}</p>
+        <p title={desc} className=' font-inter font-medium text-sm leading-relaxed line-clamp-2 dark:text-white'>{desc}</p>
     </div>
   )
 }

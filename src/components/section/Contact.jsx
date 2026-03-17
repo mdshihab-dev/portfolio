@@ -84,7 +84,7 @@ const Contact = () => {
     <div className=' py-6 flex justify-center'>
         <div  className='  flex items-center justify-center gap-x-1 text-paragraph font-inter font-normal text-sm leading-5 transition-all  dark:text-white'>
           <MdOutlineCopyright className=' text-base'/>
-          <p>2025 All Rights Resereved by Shihab</p>
+          <p>2026 All Rights Resereved by Shihab</p>
         </div>
     </div>
 
