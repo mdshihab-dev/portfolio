@@ -9,7 +9,7 @@ const ProjectPrototype = ({imageUrl,title,desc,github,live_link}) => {
         </div>
         <div className=' mt-4 mb-2.5 lg:mb-5 flex items-center justify-between'>
             <h2 className=' font-inter text-heading text-lg font-semibold dark:text-white'>{title}</h2>
-            <div className=' flex items-center justify-center gap-x-4 lg:gap-x-5'>
+            <div className=' flex items-center justify-center gap-x-5'>
               <a href={github} target='_blank'>
               <div className=' font-inter font-semibold flex items-center justify-center text-sm gap-x-[5px] text-paragraph dark:text-violet-700'>
                     <span className=' hidden lg:flex'>
@@ -23,7 +23,7 @@ const ProjectPrototype = ({imageUrl,title,desc,github,live_link}) => {
                     <span className=' hidden lg:flex'>
                       Live Demo
                     </span>
-                   <IoMdLink className='text-[22px] lg:text-xl text-paragraph dark:text-violet-700'/>
+                   <IoMdLink className='text-2xl lg:text-xl text-paragraph dark:text-violet-700'/>
               </div>
             </a>
             </div>
